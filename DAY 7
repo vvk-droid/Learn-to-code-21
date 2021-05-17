@@ -1,0 +1,30 @@
+int p,q,r;
+    float per;
+    
+    scanf("%d %d %d ",&p,&q,&r);
+    
+    per = (p+q+r)/3.00;
+    
+    printf("%.2f\n",per);
+    
+    if(per>=90)
+        printf("P");
+    
+    
+    if(per>=80 && per<90)
+        printf("Q");
+    
+    if(per>=70 && per<80)
+        printf("R");
+    
+    if(per>=60 && per<70)
+        printf("D");
+    
+    if(per>=40 && per<60)
+        printf("T");
+    
+    if(per<40)
+        printf("U");
+    
+    
+    return 0;
