@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    char array[100],ch;
+    int i,n=0;
+    
+    fgets(array,100,stdin);
+    
+    scanf("%c",&ch);
+    
+    for(i=0;i<strlen(array);i++)
+    {
+        if(array[i] == ch)
+        {
+            n ++;
+        }
+    }
+    
+    printf("%d",n);
+    
+    return 0;
+    
+    
+    
+    
+ 
+}
+
