@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+void amstrong(int a)
+{
+    int rem,s=0,m;
+    m = a;
+    while(m != 0)
+    {
+        rem = m%10;
+        s = s+(rem*rem*rem);
+        m = m/10;
+    }
+    
+    if(s == a)
+        printf("Amstrong");
+    else
+        printf("Not Amstrong");
+}
+
+int main() 
+{
+    int n;
+    
+    scanf("%d",&n);
+    
+    amstrong(n);
+  
+    return 0;
+}
