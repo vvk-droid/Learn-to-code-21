@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int a[100],n,i,big1,big2;
+    
+    scanf("%d",&n);
+    
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+    big1 = big2 = -100;
+    
+    for(i=0;i<n;i++)
+    {
+        if(a[i]>big1)
+        {
+            big2 = big1;
+            big1 = a[i];
+        }
+        
+        else if(a[i]>big2 && a[i]<big1)
+        {
+            big2 = a[i];
+        }
+    }
+    
+    printf("%d",big2);
+    
+   
+    return 0;
+    
+}
