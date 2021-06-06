@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+struct student
+{
+    int rollno;
+    char firstname[20];
+    float marks;
+};
+
+int main() 
+{
+    int i;
+    struct student s[4];
+    
+    for(i=0;i<4;i++)
+    {
+        scanf("%d",&s[i].rollno);
+        scanf("%s",s[i].firstname);
+        scanf("%f",&s[i].marks);
+    }
+    
+    for(i=0;i<4;i++)
+    {
+        printf("DETAILS OF ROLLNO %d\n",s[i].rollno);
+        printf("NAME: %s\n",s[i].firstname);
+        printf("MARKS: %.2f\n",s[i].marks);
+    }
+    
+ 
+    return 0;
+}
+
